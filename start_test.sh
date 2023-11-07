@@ -18,7 +18,7 @@ for branch in $TEST_BRANCHES ; do
     if ! next ; then
         TESTS_OK=1
     fi
-    git checkout "@{-1}" >/dev/null
+    git checkout "@{-1}" &>/dev/null
 done
 
 exit $TESTS_OK
