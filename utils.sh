@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/false
 
 ## Source: https://stackoverflow.com/a/54190627
 BOOTUP=color
