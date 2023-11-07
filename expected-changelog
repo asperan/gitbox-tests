@@ -1,0 +1,30 @@
+= feat
+- General
+* add infrastructure to run tests
+
+= fix
+- General
+* add exclusion of base branches
+* remove print of the second checkout
+
+= chore
+- General
+* add license
+* initialize repository
+
+= style
+- General
+* add newline after branch name print
+
+= docs
+- General
+* add readme
+
+= test
+- General
+* implement simple changelog test
+
+= refactor
+- General
+* change shebang line of utils script to error when run individually
+* add return to previous branch after test
