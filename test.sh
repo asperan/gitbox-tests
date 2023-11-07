@@ -1,5 +1,11 @@
 #!/bin/bash
 
-echo "Main branch, no test defined here" >&2
-exit 1
+set -euo pipefail
+set -x
+
+DEFAULT_FIRST_VERSION="0.1.0"
+
+DESCRIBED_VERSION="$(gb describe)"
+
+test "${DESCRIBED_VERSION}" == "${DEFAULT_FIRST_VERSION}"
 
