@@ -12,6 +12,7 @@ TESTS_OK=0
 
 for branch in $TEST_BRANCHES ; do
     step "$branch"
+    echo
     try git checkout "${branch}" &>/dev/null
     try ./test.sh
 
