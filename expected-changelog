@@ -1,0 +1,17 @@
+= feat
+- General
+* add infrastructure to run tests
+
+= fix
+- General
+* add exclusion of base branches
+* remove print of the second checkout
+
+= test
+- General
+* implement test
+
+= refactor
+- General
+* change shebang line of utils script to error when run individually
+* add return to previous branch after test
