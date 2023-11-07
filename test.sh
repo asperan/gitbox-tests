@@ -2,7 +2,7 @@
 
 set -euo pipefail
 IFS=$'\n\t'
-set -vx
+set -x
 
 mkdir -p /tmp/repository
 cd /tmp/repository
