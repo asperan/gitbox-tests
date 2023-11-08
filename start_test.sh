@@ -5,7 +5,7 @@ source ./utils.sh
 # Retrive all available branches (both local and remote) except main;
 # remove remote references (local and remote branches have now the same name) and decorations;
 # sort them and remove duplicate items.
-TEST_BRANCHES="$(git branch -a | grep --invert-match 'main' | sed 's/remotes\/origin\///' | tr -d ' *' | sort --unique)"
+TEST_BRANCHES="$(git branch -a | grep --invert-match 'main' | grep --invert-match 'base' | sed 's/remotes\/origin\///' | tr -d ' *' | sort --unique)"
 
 # Cumulative exit status of all tests
 TESTS_OK=0
